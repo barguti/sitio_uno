@@ -1,3 +1,11 @@
+/* -- detalles -- */
+.logo{
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
 /* -- Fondo Imagenes -- */
 .boximg{
     position: relative;
@@ -29,4 +37,26 @@
     background-size: cover;
     min-height: 400px;
     opacity: 0.65;
+}
+
+/* -- Caja Info -- */
+.info{
+    background-color: #1e90ff;
+    color: white;
+    padding: 20px;
+}
+
+.info h2{
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 4px 4px 5px rgba(0,0,0,0.5);
+    font-size: 50px;
+    margin: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.info .text{
+    text-align: justify;
+    font-family: 'Dosis', sans-serif;
 }
