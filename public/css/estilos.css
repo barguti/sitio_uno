@@ -1,0 +1,32 @@
+/* -- Fondo Imagenes -- */
+.boximg{
+    position: relative;
+    background: url(http://lorempixel.com/1920/1080/city/);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    opacity: 0.65;
+}
+.boximg2{
+    position: relative;
+    background: url(http://lorempixel.com/1920/1080/abstract/);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    opacity: 0.65;
+}
+
+.boximg3{
+    position: relative;
+    background: url(http://lorempixel.com/1920/1080/city/);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    opacity: 0.65;
+}
