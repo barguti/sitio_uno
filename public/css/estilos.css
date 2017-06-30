@@ -1,62 +1,226 @@
-/* -- detalles -- */
-.logo{
+/* -- Detalles Varios -- */
+.img-responsive{
     padding: 10px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    position: absolute !important;
+    top: 200px;
+}
+a{
+    text-decoration: none;
+}
+
+/* -- Menu -- */
+.menu{
+    background-color: #141419;
+}
+.menu .nav{
+    border: none;
+}
+.menu .nav-tabs a{
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin: 10px 6px;
+    padding: 5px 30px;
+    transition: 0.3s;
+}
+.menu .nav-tabs a:hover{
+    background-color: #1e90ff;
+    color: white;    
+    transform: scale(1.1);
 }
 
 /* -- Fondo Imagenes -- */
-.boximg{
-    position: relative;
-    background: url(http://lorempixel.com/1920/1080/city/);
+.boximg, .boximg2, .boximg3{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     opacity: 0.65;
+    position: relative;
+}
+.boximg{
+    background-image: url(../img/fondo.png);
+    min-height: 800px;
 }
 .boximg2{
-    position: relative;
-    background: url(http://lorempixel.com/1920/1080/abstract/);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 400px;
-    opacity: 0.65;
+    background-image: url(../img/fondo2.png);
+    min-height: 500px;
 }
-
 .boximg3{
-    position: relative;
-    background: url(http://lorempixel.com/1920/1080/city/);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 400px;
-    opacity: 0.65;
+    background-image: url(../img/fondo3.png);
+    min-height: 600px;
 }
 
-/* -- Caja Info -- */
+
+/* -- Detalles Info -- */
 .info{
     background-color: #1e90ff;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
     color: white;
     padding: 20px;
 }
-
 .info h2{
     font-family: 'Poppins', sans-serif;
-    text-shadow: 4px 4px 5px rgba(0,0,0,0.5);
     font-size: 50px;
+    letter-spacing: 5px;
     margin: 15px 0;
     text-align: center;
+    text-shadow: 4px 4px 5px rgba(0,0,0,0.5);
     text-transform: uppercase;
-    letter-spacing: 5px;
+}
+.info p{
+    text-align: justify;
+    padding: 0 5%;
 }
 
-.info .text{
-    text-align: justify;
-    font-family: 'Dosis', sans-serif;
+
+/* -- Detalles Servicios -- */
+.serviceInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;    
+}
+.serviceInfo .block h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    letter-spacing: 5px;
+    margin: 5px 0 10px 0;
+    text-transform: uppercase;
+}
+.serviceInfo .block{
+    padding: 8px;
+    width: 100%;
+}
+.serviceInfo .iconService{
+    font-size: 70px;
+}
+.iconService:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.btn{
+    background-color: #1e90ff;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+    padding: 5px 30px;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: #141419;
+    color: white;    
+    transform: scale(1.1);
+}
+
+
+/* -- Contacto -- */
+.campo{
+    background-color: #141419;
+    border: 3px solid white;
+    color: white;
+    margin: 15px 0;
+    resize: none;
+}
+
+
+/* -- Footer -- */
+footer{
+    background: #141419;
+    clear: both;
+    color: #666;
+    line-height: 40px;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 100%;
+}
+footer .left{
+    float: left;
+    margin-left: 20px;
+}
+footer .right{
+    float: right;
+    margin-right: 20px;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    display: inline-block;
+    margin-right: 5px;
+}
+footer ul li a{
+    color: #666;
+    font-size: 30px;
+}
+footer ul li a:hover{
+    color: #666;
+    font-size: 30px;
+}
+
+
+/* Media queries*/
+@media all and (min-width: 769px){
+    .content h1{
+        font-size: 100px;
+    }
+
+    .serviceInfo .block{
+        width: 30%;
+    }
+
+    .formulario{
+        padding: 0 20%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .serviceInfo .block{
+        margin-bottom: 5px;
+        border-top: 2px solid white;
+    }
+    .menu i{
+        color: white;
+        font-size: 1.5em;
+    }
+    .menu .nav-tabs a{
+        margin-bottom: 5px;
+        text-align: center;
+        width: 100%;
+    }
+    .menu .nav-tabs a:hover{
+        margin-bottom: 5px;
+        text-align: center;
+        width: 100%;
+    }     
+}
+
+@media only screen and (max-width : 480px){
+   .info{
+        word-break: break-word;
+    }
+    .serviceInfo .block{
+        margin-bottom: 5px;
+        border-top: 2px solid white;
+    }   
+}
+
+@media only screen and (max-width : 320px){
+    .img-responsive{
+        width: 90%;
+    }    
+    .info{
+        word-break: break-word;
+    }
+    .serviceInfo .block{
+        margin-bottom: 5px;
+        border-top: 2px solid white;
+    }
 }
