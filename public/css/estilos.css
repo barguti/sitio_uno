@@ -31,6 +31,10 @@ a{
     color: white;    
     transform: scale(1.1);
 }
+.menu .nav-tabs a:focus {
+    background-color: #1e90ff;
+}
+
 
 /* -- Fondo Imagenes -- */
 .boximg, .boximg2, .boximg3{
@@ -97,11 +101,7 @@ a{
     width: 100%;
 }
 .serviceInfo .iconService{
-    font-size: 70px;
-}
-.iconService:hover{
-    transform: scale(1.2);
-    transition: 0.3s;
+    font-size: 4em;
 }
 .btn{
     background-color: #1e90ff;
@@ -179,6 +179,10 @@ footer ul li a:hover{
     .formulario{
         padding: 0 20%;
     }
+    .iconService:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }    
 }
 
 @media only screen and (max-width: 768px){
@@ -191,14 +195,24 @@ footer ul li a:hover{
         font-size: 1.5em;
     }
     .menu .nav-tabs a{
-        margin-bottom: 5px;
+        margin: 0 10% 5px 10%;
         text-align: center;
-        width: 100%;
+        width: 80%;
     }
     .menu .nav-tabs a:hover{
-        margin-bottom: 5px;
+        margin: 0 10% 5px 10%;
         text-align: center;
-        width: 100%;
+        width: 80%;
+    }
+    .boximg{
+        min-height: 700px;
+    }
+    .boximg2, .boximg3{
+        min-height: 400px;
+    }
+    .img-responsive{
+        width: 60%;
+        top: 45%;
     }     
 }
 
@@ -209,13 +223,14 @@ footer ul li a:hover{
     .serviceInfo .block{
         margin-bottom: 5px;
         border-top: 2px solid white;
-    }   
-}
-
-@media only screen and (max-width : 320px){
+    }
     .img-responsive{
         width: 90%;
-    }    
+        top: 45%;
+    }
+}
+
+@media only screen and (max-width : 320px){  
     .info{
         word-break: break-word;
     }
@@ -223,4 +238,8 @@ footer ul li a:hover{
         margin-bottom: 5px;
         border-top: 2px solid white;
     }
+    .img-responsive{
+        width: 100%;
+        top: 55%;
+    }      
 }

@@ -10,11 +10,11 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <link rel="stylesheet" href="public/css/estilos.css">
 
-   <link href="https://fonts.googleapis.com/css?family=Dosis|Poppins" rel="stylesheet"> 
+   <link href="https://fonts.googleapis.com/css?family=Dosis|Poppins" rel="stylesheet">
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <script src="public/js/funciones.js"></script>
+
 </head>
 <body>
 	
@@ -30,29 +30,28 @@
          <!-- opciones menu -->
          <div class="collapse navbar-collapse" id="opciones_menu">
             <ul class="hidden-sm hidden-md hidden-lg nav nav-tabs nav-pills nav-stacked">
-               <li><a href="" role="presentation">Inicio</a></li>
-               <li><a href="" role="presentation">Nosotros</a></li>
-               <li><a href="" role="presentation">Servicios</a></li>
-               <li><a href="" role="presentation">Contacto</a></li>
+               <li><a href="#" role="presentation" id="btn_nosotros">Nosotros</a></li>
+               <li><a href="#" role="presentation" id="btn_servicio">Servicios</a></li>
+               <li><a href="#" role="presentation" id="btn_contacto">Contacto</a></li>
             </ul>
             <ul class="hidden-xs nav nav-tabs">
-               <li><a href="" role="presentation">Inicio</a></li>
-               <li><a href="" role="presentation">Nosotros</a></li>
-               <li><a href="" role="presentation">Servicios</a></li>
-               <li><a href="" role="presentation">Contacto</a></li>
+               <li><a href="#" role="presentation" id="btn_inicio">Inicio</a></li>
+               <li><a href="#" role="presentation" id="btn_nosotros">Nosotros</a></li>
+               <li><a href="#" role="presentation" id="btn_servicio">Servicios</a></li>
+               <li><a href="#" role="presentation" id="btn_contacto">Contacto</a></li>
             </ul>            
          </div>
       </div>
    </nav>
 
 	<!-- portada -->
-	<div class="boximg"></div>
+	<div class="boximg" id="box_uno"></div>
 
    <!-- logo -->
    <img class="img-responsive" src="public/img/logo.png">
 
    <!-- informacion -->
-   <section class="info">
+   <section class="info" id="box_dos">
       <h2>Sobre</h2>
       <p>
          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis iusto fugit nihil tempora explicabo voluptas tenetur repellendus quas ut adipisci similique aliquam repellat ab quae, nisi, commodi omnis a. Cupiditate.
@@ -65,7 +64,7 @@
    <div class="boximg2"></div>
    
    <!-- servicios -->
-   <section class="info">
+   <section class="info" id="box_tres">
       <h2>Servicios</h2>
 
       <div class="serviceInfo">
@@ -95,7 +94,7 @@
    <div class="boximg3"></div>
 
    <!-- contacto -->
-   <section class="info">
+   <section class="info" id="box_cuatro">
       <h2>Hablemos</h2>
       <form action="#" class="formulario">
          <div class="form-group">
@@ -119,7 +118,9 @@
             <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
          </ul>
       </div>
-   </footer>   
+   </footer>
+
+   <script src="public/js/funciones.js"></script>   
 
 </body>
 </html>
