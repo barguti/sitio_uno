@@ -168,14 +168,9 @@ footer ul li a:hover{
 
 /* Media queries*/
 @media all and (min-width: 769px){
-    .content h1{
-        font-size: 100px;
-    }
-
     .serviceInfo .block{
         width: 30%;
     }
-
     .formulario{
         padding: 0 20%;
     }
@@ -217,9 +212,6 @@ footer ul li a:hover{
 }
 
 @media only screen and (max-width : 480px){
-   .info{
-        word-break: break-word;
-    }
     .serviceInfo .block{
         margin-bottom: 5px;
         border-top: 2px solid white;
@@ -231,9 +223,6 @@ footer ul li a:hover{
 }
 
 @media only screen and (max-width : 320px){  
-    .info{
-        word-break: break-word;
-    }
     .serviceInfo .block{
         margin-bottom: 5px;
         border-top: 2px solid white;
